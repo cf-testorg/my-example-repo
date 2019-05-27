@@ -42,7 +42,6 @@ public class SampleAmqpSimpleApplication {
 		return new Queue("foo");
 	}
 
-	@RabbitHandler
 	public void process(@Payload String foo) {
 		System.out.println(new Date() + ": " + foo);
 	}
