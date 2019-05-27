@@ -37,7 +37,6 @@ public class SampleAmqpSimpleApplication {
 		return new Sender();
 	}
 
-	@Bean
 	public Queue fooQueue() {
 		return new Queue("foo");
 	}
